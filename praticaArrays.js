@@ -1,3 +1,4 @@
+/*
 // Exercício proposto
 jantarDeHoje = ['🍔', '🌭', '🍕']
 jantarDeHoje.pop()
@@ -69,6 +70,18 @@ const arrayOriginal2 = [50, 60, 70]
 const arrayConcat2 = arrayOriginal2.concat([80, [90, 100]]) // aqui hà um animhamento, um array dentro de outro array(matrix)
 console.log(arrayConcat2)
 console.log(arrayOriginal2)
+*/
 
-
-
+const alunos = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
+const notas  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
+const alunosNotas = [alunos, notas];
+function buscaAlunoNota(aluno){
+    if(alunosNotas[0].includes(aluno)){
+        let indiceAluno = alunosNotas[0].indexOf(aluno);
+        let notaAluno = alunosNotas[1][indiceAluno];
+        console.log(`O Aluno(a) ${aluno} foi encontrado e sua nota é: ${notaAluno}`);
+    }else{
+        console.log('O Aluno(a) não foi encontrado!');
+    }
+}
+buscaAlunoNota("Nino");

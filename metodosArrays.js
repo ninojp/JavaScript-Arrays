@@ -69,28 +69,44 @@ console.log('');
 //considere utilizar push() ou splice() para inserir novos elementos ou fazer alterações no array original.
 //-----------------------------------------------------------------------------------------------------------------------
 
-/*
-filter()
-Retorna uma lista contando todos os elementos que passaram em um teste, ou seja, uma função escrita por nós.
-Não altera o array onde foi chamado, então precisamos salvar esse resultado em um novo array.
+
+// filter()
+// Retorna uma lista contando todos os elementos que passaram em um teste, ou seja, uma função escrita por nós.
+// Não altera o array onde foi chamado, então precisamos salvar esse resultado em um novo array.
 //-----------------------------------------------------------------------------------------------------------------------
 
-find()
-Funciona de forma parecida com o filter, porém retorna apenas o primeiro valor que satisfizer o teste, podendo ser uma string ou um número.
+// find()
+// Funciona de forma parecida com o filter, porém retorna apenas o primeiro valor que satisfizer o teste, podendo ser uma string ou um número.
 //-----------------------------------------------------------------------------------------------------------------------
 
-findIndex()
-Funciona igual o find(), mas retorna o índice em vez do elemento, possibilitando usá-lo em outras partes do código.
+// findIndex()
+// Funciona igual o find(), mas retorna o índice em vez do elemento, possibilitando usá-lo em outras partes do código.
 //-----------------------------------------------------------------------------------------------------------------------
 
-lastIndexOf()
-É igual o findIndex() porém começa do último elemento, não no primeiro.
+// includes();  e  indexOf();
+const alunos1 = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
+const notas1  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
+const alunosNotas = [alunos1, notas1];
+function buscaAlunoNota(aluno){
+    if(alunosNotas[0].includes(aluno)){
+        let indiceAluno = alunosNotas[0].indexOf(aluno);
+        let notaAluno = alunosNotas[1][indiceAluno];
+        console.log(`O Aluno(a) ${aluno} foi encontrado e sua nota é: ${notaAluno}`);
+    }else{
+        console.log('O Aluno(a) não foi encontrado!');
+    }
+}
+buscaAlunoNota("Lara");
+console.log("\n");
 //-----------------------------------------------------------------------------------------------------------------------
 
-forEach()
-Executa uma função em cada elemento do array de forma individual.
-Não altera o array original e nem retorna um valor, deixando esse trabalho a cargo da função escolhida.
-*/
+// lastIndexOf()
+// É igual o findIndex() porém começa do último elemento, não no primeiro.
+//-----------------------------------------------------------------------------------------------------------------------
+
+// forEach()
+// Executa uma função em cada elemento do array de forma individual.
+// Não altera o array original e nem retorna um valor, deixando esse trabalho a cargo da função escolhida.
 //-----------------------------------------------------------------------------------------------------------------------
 
 // pop()
@@ -138,7 +154,7 @@ console.log("\n");
 //-----------------------------------------------------------------------------------------------------------------------
 
 // slice()
-// Copia uma parte do array para outro array.
+// Copia uma parte do array para outro array, (usado para fatiar, dividir o array em partes)
 console.log(notas2);
 const notasParte1 = notas2.slice(notas2.length/2);
 const notasParte2 = notas2.slice(0,notas2.length/2);
