@@ -72,16 +72,21 @@ console.log(arrayConcat2)
 console.log(arrayOriginal2)
 */
 
-const alunos = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
-const notas  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
-const alunosNotas = [alunos, notas];
+const alunosList = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
+const notasList  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
+const alunosNotas = [alunosList, notasList];
 function buscaAlunoNota(aluno){
     if(alunosNotas[0].includes(aluno)){
-        let indiceAluno = alunosNotas[0].indexOf(aluno);
-        let notaAluno = alunosNotas[1][indiceAluno];
+        // const indiceAluno = alunosNotas[0].indexOf(aluno);//primeiramente feito assim
+        // const alunos = alunosNotas[0]; //mostrado q poderia ser feito assim
+        // const notaAluno = alunosNotas[1][indiceAluno]; //primeiramente feito assim
+        // const notas = alunosNotas[1]; //mostrado q poderia ser feito assim
+        const [alunos, notas] = alunosNotas; //e desta outra forma, desestruturação (ou destructuring, em inglês)
+        const indiceAluno = alunos.indexOf(aluno);
+        const notaAluno = notas[indiceAluno];
         console.log(`O Aluno(a) ${aluno} foi encontrado e sua nota é: ${notaAluno}`);
     }else{
         console.log('O Aluno(a) não foi encontrado!');
     }
 }
-buscaAlunoNota("Nino");
+buscaAlunoNota("Leo");

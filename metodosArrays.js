@@ -83,7 +83,8 @@ console.log('');
 // Funciona igual o find(), mas retorna o índice em vez do elemento, possibilitando usá-lo em outras partes do código.
 //-----------------------------------------------------------------------------------------------------------------------
 
-// includes();  e  indexOf();
+// includes(); Este método verifica dentro do array indicado se possui o valor do parametro passado: array.includes(parametro); retorna TRUE ou FALSE
+// indexOf(); Este método verifica dentro do array indicado se possui o valor do parametro passado: array.indexOf(parametro); retorna O INDICE(posição dentro do array)
 const alunos1 = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
 const notas1  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
 const alunosNotas = [alunos1, notas1];
