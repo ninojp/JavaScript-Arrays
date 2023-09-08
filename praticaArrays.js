@@ -41,7 +41,7 @@ animaisDoAquario.splice(1,0,'🐠') //a partir do indice 1, não removeu nada(0)
 console.log(animaisDoAquario)
 animaisDoAquario.splice(3,2,'🐟') //a partir do indice 3, removeu 2, adicionou o outro peixe
 console.log(animaisDoAquario)
-console.log("");
+console.log("\n");
 
 // TRABALHANDO COM O MÉTODO CONCAT(): Junta dois array FORMANDO um terceiro com todos os valores, na ORDEM que foram colocados
 const salaJS = ["Evaldo", "Camis", "Mari"];
@@ -50,10 +50,25 @@ const salaPython = ["Ju", "Leo", "Raquel"];
 console.log(salaPython)
 const salasUnificadas = salaJS.concat(salaPython);
 console.log(salasUnificadas);
+console.log("\n");
+
+// Trabalhando como CONCAT() com outro tipos de dados
+const arrayOriginal = ["Maria", "Carlos", "Eduardo", "Samanta"]
+const arrayConcat = arrayOriginal.concat("André", "Fernanda")
+console.log(arrayOriginal)
+console.log(arrayConcat)
 console.log("");
 
-// ESTRUTURA DE DADOS
+const arrayOriginal1 = ["Maria", "Carlos", "Eduardo", "Samanta"]
+const arrayConcat1 = arrayOriginal1.concat(["André", "Fernanda"], ["Ricardo", "Ana"], ["Marcelo", "Bia"])
+console.log(arrayOriginal1)
+console.log(arrayConcat1)
+console.log("");
 
+const arrayOriginal2 = [50, 60, 70]
+const arrayConcat2 = arrayOriginal2.concat([80, [90, 100]]) // aqui hà um animhamento, um array dentro de outro array(matrix)
+console.log(arrayConcat2)
+console.log(arrayOriginal2)
 
 
 

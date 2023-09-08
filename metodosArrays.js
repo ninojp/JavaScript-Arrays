@@ -39,6 +39,7 @@ console.log(tiposvariados);
 console.log('');
 
 // Estruturas de dados, um array dentro de outro
+// Outra forma de chamar os arrays de 2 dimensões é matrizes.
 const alunos = ["João", "Juliana", "Ana", "Caio"];
 const medias = [10, 8, 7.5, 9];
 const mediasAlunos = [alunos, medias];
@@ -46,6 +47,7 @@ console.log(mediasAlunos);
 // Acessando as posições dentro do array principal
 console.log(`A aluna no indice 1 é: ${mediasAlunos[0][1]} e sua média é: ${mediasAlunos[1][1]}`);
 console.log('');
+
 
 /************************************************************************************************************************************************************
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
@@ -57,9 +59,14 @@ Existem muitos métodos para conseguir lembrar de todos, mas vamos listar os pri
 // concat()
 // Junta dois arrays, colocando o array passado como argumento, logo depois do primeiro. Em português essa operação é conhecida como concatenação.
 // Não altera o array no qual foi chamado, então precisamos salvar esse resultado em um novo array.
+console.log(notas);
 var notas2 = [9, 6.5, 3, 10];
+console.log(notas2);
 let concatNotas = notas.concat(notas2);
 console.log(concatNotas);
+console.log('');
+// concat() é um método útil quando não se deseja alterar o array original, e sim fazer uma cópia alterada. Caso isso não seja necessário, 
+//considere utilizar push() ou splice() para inserir novos elementos ou fazer alterações no array original.
 //-----------------------------------------------------------------------------------------------------------------------
 
 /*
