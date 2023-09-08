@@ -42,3 +42,18 @@ console.log(animaisDoAquario)
 animaisDoAquario.splice(3,2,'🐟') //a partir do indice 3, removeu 2, adicionou o outro peixe
 console.log(animaisDoAquario)
 console.log("");
+
+// TRABALHANDO COM O MÉTODO CONCAT(): Junta dois array FORMANDO um terceiro com todos os valores, na ORDEM que foram colocados
+const salaJS = ["Evaldo", "Camis", "Mari"];
+console.log(salaJS)
+const salaPython = ["Ju", "Leo", "Raquel"];
+console.log(salaPython)
+const salasUnificadas = salaJS.concat(salaPython);
+console.log(salasUnificadas);
+console.log("");
+
+// ESTRUTURA DE DADOS
+
+
+
+

@@ -13,7 +13,7 @@ console.log(arrayVazia1.length)
 console.log(arrayVazia1[0])
 console.log(arrayVazia1[1])
 console.log(arrayVazia1[2])
-console.log('\n'); // usado apenas pra criar duas linhas vazias
+console.log(''); // usado apenas pra criar duas linhas vazias
 
 //O JavaScript manteve as posições vazias e adicionou o 50 ao final do array. Após a execução, ele passou a ter 4 posições, mas somente um elemento (o número 50). 
 //Chamamos este tipo de estrutura de array esparso e é importante lembrar deste comportamento dos arrays em JavaScript enquanto trabalhamos.
@@ -21,20 +21,31 @@ console.log(arrayVazia1.length)
 arrayVazia1.push(50)
 console.log(arrayVazia1)
 console.log(arrayVazia1.length)
-console.log('\n');
+console.log('');
 
 // Array simples
 var notas = [10, 6.5, 8, 7.5];
 console.log(notas);
 console.log(typeof notas);
+console.log('');
 
 // A propriedade length é muito útil para trabalharmos com arrays, pois ele faz a contagem de elementos de um array.
 console.log('Quantidade de Indices: '+notas.length);
+console.log('');
 
 // Os arrays podem conter os tipos primitivos de valores misturados
 let tiposvariados = ["item", 4.5, true, 7, "item2"];
 console.log(tiposvariados);
+console.log('');
 
+// Estruturas de dados, um array dentro de outro
+const alunos = ["João", "Juliana", "Ana", "Caio"];
+const medias = [10, 8, 7.5, 9];
+const mediasAlunos = [alunos, medias];
+console.log(mediasAlunos);
+// Acessando as posições dentro do array principal
+console.log(`A aluna no indice 1 é: ${mediasAlunos[0][1]} e sua média é: ${mediasAlunos[1][1]}`);
+console.log('');
 
 /************************************************************************************************************************************************************
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
