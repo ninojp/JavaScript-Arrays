@@ -1,4 +1,3 @@
-/*
 // Exercício proposto
 jantarDeHoje = ['🍔', '🌭', '🍕']
 jantarDeHoje.pop()
@@ -70,8 +69,9 @@ const arrayOriginal2 = [50, 60, 70]
 const arrayConcat2 = arrayOriginal2.concat([80, [90, 100]]) // aqui hà um animhamento, um array dentro de outro array(matrix)
 console.log(arrayConcat2)
 console.log(arrayOriginal2)
-*/
 
+
+// DESESTRUTURAR um array ou destructuring, em inglês: const [alunos, notas] = alunosNotas;
 const alunosList = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
 const notasList  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
 const alunosNotas = [alunosList, notasList];
