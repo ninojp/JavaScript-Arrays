@@ -1,4 +1,5 @@
 // Os ARRAYs são estruturas de dados que representam listas de dados: variavelArray = ["item1", "item2", "item3"];
+// Também chamado de vetor, matriz ou arranjo, o array é a mais comum das estruturas de dados. Um array é uma lista ordenada de valores:
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Os arrays podem ser declarados sem valor inicial
 const arrayVazia = [];

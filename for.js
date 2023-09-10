@@ -13,7 +13,9 @@ console.log("\n");
 //--------------------------------------------------------------------------------------------------------------
 
 // Estrutura FOR para laços de repetição
-// São utilizados para, entre outras coisas, percorrer arrays e executar blocos de código para cada elemento.
+// A forma mais “clássica” de se efetuar um loop em várias linguagens, o for é muito conveniente pois pode ser utilizado 
+// com qualquer tipo de iterável e é construído de uma forma que deixa muito claro quais são todas as “fases” de cada loop 
+// também chamamos um loop de laço de repetição ou de iteração.
 console.log("Estrutura FOR para laços de repetição");
 for(i=0; i<6; i++){
     console.log(i);
