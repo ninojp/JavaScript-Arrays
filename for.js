@@ -45,8 +45,10 @@ console.log("FOR invertido");
 // Declaramos o valor inicial da variável de controle como o valor da última posição do array (numeros.length - 1); 
 //realizamos um decremento (i--) ao invés de um incremento e a condição de execução é i >= 0. 
 //Ou seja, nesse caso, a variável i começará do valor 5 e irá até 0.
-const numeros1 = [100, 200, 300, 400, 500, 600];
+const numeros1 = [100, 200, 300, 400, 500, 600, 700];
 for(let i =  numeros1.length - 1; i >= 0; i--){
+    // console.log(numeros1.length -1); 
+    // console.log(numeros1.length); 
     console.log(numeros[i]); 
 }
 console.log("\n");

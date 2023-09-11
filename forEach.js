@@ -1,6 +1,7 @@
 
 // FOREACH
 const nomes = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
+// Ao contrário de for e for…of, o forEach() é um método do objeto Array. (Em programação, chamamos de método uma função que é propriedade de um objeto.)
 // O método de array .forEach lê to o array e nos trás todos os ITENS(elementos) e seus INDICES
 // ForEach, usando uma função declarada externamente
 // Os PARAMETROS(nome, indice) passados na função são opcionais, o primeiro referrece ao ELEMENTO(item do array) e o segundo o INDICE(posição dentro do array)
