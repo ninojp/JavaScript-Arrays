@@ -1,10 +1,12 @@
 
 // FOREACH
-const nomes = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
+// Aprendemos mais uma forma de iterar sobre arrays, dessa vez com um método próprio deles. 
 // Ao contrário de for e for…of, o forEach() é um método do objeto Array. (Em programação, chamamos de método uma função que é propriedade de um objeto.)
-// O método de array .forEach lê to o array e nos trás todos os ITENS(elementos) e seus INDICES
+// O forEach recebe uma função callback que será executada para cada item do array.
+// O método de array .forEach lê todo o array e nos trás todos os ITENS(elementos) e seus INDICES
 // ForEach, usando uma função declarada externamente
 // Os PARAMETROS(nome, indice) passados na função são opcionais, o primeiro referrece ao ELEMENTO(item do array) e o segundo o INDICE(posição dentro do array)
+const nomes = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
 console.log('ForEach, usando uma função declarada externamente');
 function imprimiNomes(elemento, indice){
     console.log(elemento, indice);

@@ -7,8 +7,9 @@ jantarDeHoje.push('🥗')
 jantarDeHoje.push('🍏')
 console.log(jantarDeHoje);
 console.log("\n");
+//========================================================================================================================================
 
-// TRABALHANDO COMO SLICE()
+// PRATICANDO O SLICE()
 const alunos = ['João', 'Juliana', 'Ana', 'Caio', 'Lara', 'Marjorie', 'Guilherme', 'Aline', 'Fabiana', 'Andre', 'Carlos', 'Paulo', 'Bia', 'Vivian', 'Isabela', 'Vinícius', 'Renan', 'Renata', 'Daisy', 'Camilo'];
 // console.log(alunos);
 // Usado o SLICE() para dividir o array, indicando o INDICE onde começa e o ultimo(que não será colocado)
@@ -42,6 +43,7 @@ console.log(animaisDoAquario)
 animaisDoAquario.splice(3,2,'🐟') //a partir do indice 3, removeu 2, adicionou o outro peixe
 console.log(animaisDoAquario)
 console.log("\n");
+//============================================================================================================================================
 
 // TRABALHANDO COM O MÉTODO CONCAT(): Junta dois array FORMANDO um terceiro com todos os valores, na ORDEM que foram colocados
 const salaJS = ["Evaldo", "Camis", "Mari"];
@@ -50,9 +52,9 @@ const salaPython = ["Ju", "Leo", "Raquel"];
 console.log(salaPython)
 const salasUnificadas = salaJS.concat(salaPython);
 console.log(salasUnificadas);
-console.log("\n");
+console.log("");
 
-// Trabalhando como CONCAT() com outro tipos de dados
+// PRATICANDO O CONCAT() com outro tipos de dados
 const arrayOriginal = ["Maria", "Carlos", "Eduardo", "Samanta"]
 const arrayConcat = arrayOriginal.concat("André", "Fernanda")
 console.log(arrayOriginal)
@@ -69,24 +71,10 @@ const arrayOriginal2 = [50, 60, 70]
 const arrayConcat2 = arrayOriginal2.concat([80, [90, 100]]) // aqui hà um animhamento, um array dentro de outro array(matrix)
 console.log(arrayConcat2)
 console.log(arrayOriginal2)
+console.log("");
+//============================================================================================================================================
 
-
-// DESESTRUTURAR um array ou destructuring, em inglês: const [alunos, notas] = alunosNotas;
-const alunosList = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
-const notasList  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
-const alunosNotas = [alunosList, notasList];
-function buscaAlunoNota(aluno){
-    if(alunosNotas[0].includes(aluno)){
-        // const indiceAluno = alunosNotas[0].indexOf(aluno);//primeiramente feito assim
-        // const alunos = alunosNotas[0]; //mostrado q poderia ser feito assim
-        // const notaAluno = alunosNotas[1][indiceAluno]; //primeiramente feito assim
-        // const notas = alunosNotas[1]; //mostrado q poderia ser feito assim
-        const [alunos, notas] = alunosNotas; //e desta outra forma, desestruturação (ou destructuring, em inglês)
-        const indiceAluno = alunos.indexOf(aluno);
-        const notaAluno = notas[indiceAluno];
-        console.log(`O Aluno(a) ${aluno} foi encontrado e sua nota é: ${notaAluno}`);
-    }else{
-        console.log('O Aluno(a) não foi encontrado!');
-    }
-}
-buscaAlunoNota("Leo");
+// PRATICANDO o array.reduce()
+const numeros = [43, 50, 65, 12]
+const soma = numeros.reduce((acc, atual) => atual + acc, 0)
+console.log(soma) //170
