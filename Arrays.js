@@ -114,14 +114,17 @@ console.log('');
 // includes(); Este método verifica dentro do array indicado se possui o valor do parametro passado: array.includes(parametro); retorna TRUE ou FALSE
 // indexOf(); Este método verifica dentro do array indicado se possui o valor do parametro passado: array.indexOf(parametro); retorna O INDICE(posição dentro do array)
 console.log('INCLUDES() e seu uso: array.includes()');
-const alunos1 = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
-const notas1  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
-const alunosNotas = [alunos1, notas1];
+// const alunos4 = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
+// const notas4  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];  //ANTES(dentro do praticarArrays.js) ESTAVA FUNCIONANDO
+// const alunosNotas4 = [alunos4, notas4];  //AQUI(Arrays.js) TIVE Q COLOCAR AS VARIÁVEIS DENTRO DA FUNÇÃO 
 function buscaAlunoNota(aluno){
-    if(alunosNotas[0].includes(aluno)){
-        let indiceAluno = alunosNotas[0].indexOf(aluno);
-        let notaAluno = alunosNotas[1][indiceAluno];
-        console.log(`O Aluno(a) ${aluno} foi encontrado e sua nota é: ${notaAluno}`);
+    const alunos4 = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
+    const notas4  = [5.0, 7.8, 6.5, 8.7, 7.0, 9.4];
+    const alunosNotas4 = [alunos4, notas4];
+    if(alunosNotas4[0].includes(aluno)){
+        let indiceAluno = alunosNotas4[0].indexOf(aluno);
+        let notaAluno4 = alunosNotas4[1][indiceAluno];
+        console.log(`O Aluno(a) ${aluno} foi encontrado e sua nota é: ${notaAluno4}`);
     }else{
         console.log('O Aluno(a) não foi encontrado!');
     }
