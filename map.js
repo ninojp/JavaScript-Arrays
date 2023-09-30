@@ -49,7 +49,6 @@ console.log(novoArray1);
 console.log('\n');
 //---------------------------------------------------------------------------------
 
-
 //“String”, além de ser o tipo de dado usado para representar textos, também se define como uma sequência ordenada de caracteres!
 //“Lista ordenada” (ou sequência) também é uma forma de definir arrays, certo? Então podemos pensar que, por baixo dos panos, 
 //strings são armazenadas em memória da seguinte forma:
